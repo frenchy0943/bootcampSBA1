@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src = "./scripts/home.js"></script>
+
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <div class = "container" id = "mainContainer">
+        <div class = "jumbotron text-center" id="header">
+            <h1>Video Game Ratings</h1>
+            <h4><a href="./aboutUs.html">About Us</a></h4>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <h3 class="gameTitle">The Last Of Us</h3>
+                <p class="gameDesc">One of the most highly rated games of all time amongst critics and consumers. Please give your rating out of 10 in the drop down menu below</p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <h3 class="gameTitle">Borderlands 2</h3>
+                <p class="gameDesc">The pinnacle of loot shooters. Widely regarded as the best game in the series for both gameplay and story. Please give your rating out of 10 in the drop down menu below</p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <h3 class="gameTitle">Final Fantasy VII Remake</h3>
+                <p class="gameDesc">A remake of the classic RPG. Final Fantasy VII is regarded as one of the greatest RPGs ever. How does the remake stack up? Please give your rating out of 10 in the drop down menu below</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <form>
+                    <label for="Last of Us rating">Rating</label>
+                    <select name="TLOU rating" id="TLOUrating">
+                        <option value="N/A">N/A</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <label for="Borderlands 2 rating">Rating</label>
+                <select name="BL2 rating" id="BL2rating">
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <label for="FF7R rating">Rating</label>
+                <select name="FF7R rating" id="FF7Rrating">
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <form>
+                <button type="button" onclick=getRatings()>Submit</button>
+            </form>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 gameDesc" id="results" >
+            </div>
+        </div>
+
+        <img src="./images/xboxController.jpg.jpg" alt="" style="width: 100%">
+        
+    </div>
+</body>
+</html>

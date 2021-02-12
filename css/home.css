@@ -1,0 +1,22 @@
+body{
+    background-color: #1f2833;
+}
+
+#mainContainer{
+    background-color: #0b0c10;
+}
+#header{
+    background-color: #66fcf1;
+}
+
+.gameTitle{
+    color: #45a29e;
+}
+
+.gameDesc{
+    color: #c5c6c7;
+}
+
+label{
+    color: #45a29e;
+}
